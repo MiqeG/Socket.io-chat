@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <title>MGG Chat Server</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+  <ul id="generalpage" class="pages">
+
+    <li class="chat page">
+
+      <div id="transfer">
+
+
+        <div id="connectedusers" class="pscrollbar">
+          <h4 class="menutop">USERS : </h4>
+
+          <table id="usertable"></table>
+        </div>
+        <div>
+          <h4 class="menutop">FILES : </h4>
+
+        </div>
+
+        <div id="scrollablediv" class="pscrollbar">
+
+          <table id="apache"></table>
+
+        </div>
+
+        <div id="scrollablediv2" class="pscrollbar">
+          <div class="rightsidebuttons" id="apache2">
+            <div id='divofexpander'>
+              <div id="emoticonlabelexpander" class="emoticonlabel">☠️</div>
+            </div>
+            <iframe id="buttonframe" frameborder="0" width="100%" src="/indext.html"></iframe>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="chatArea">
+
+        <ul class="messages" class="pscrollbar"> <input id="chatmessageinput" class="inputMessage" placeholder="Type here...">
+        </ul>
+      </div>
+
+    <li class="emoticon window">
+      <div id="titlediv" class="wholabel">Emoticons</div>
+      <div id="closediv" class="wholabel">X</div>
+      <div id="emoticondiv">
+
+      </div>
+    </li>
+    <li class="login page">
+      <div class="form row">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-3 col-lg-12">
+              <h3 id="usernameprompt" class="title">What's your nickname?</h3>
+              <input id="usernamefield" class="usernameInput" type="text" maxlength="14" required />
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </li>
+    <li class="privatemessage window">
+      <div>
+        <label id="wholabel2" class="wholabel">Private Message for:</label>
+      </div>
+      <div>
+
+        <label id="privateuserlabel">Name</label>
+      </div>
+
+      <div>
+        <input id="privatemessagetext" class="inputs" placeholder="Type here..." name="privatemessageinput" value=""
+          type="text">
+      </div>
+      <div>
+        <label id="closebutton" class="buttonlabel">Close</label>
+      </div>
+    </li>
+    <li class="admin window">
+
+      <div id="adminlablediv1">
+        <label id="wholabel" class="wholabel">Text</label>
+      </div>
+      <div id="adminlablediv2">
+        <label id="userlabel">Name</label>
+      </div>
+      <div id="adminlablediv3">
+        <label id="iplabel">IP</label>
+      </div>
+
+      <div>
+        <label id="honk" class="buttonlabel">Honk</label>
+      </div>
+
+      <div>
+        <label id="disconnect" class="buttonlabel">Disconnect</label>
+      </div>
+      <div class="inputdiv">
+        <input id="renamedtext" class="inputs" name="renameinput" value="" type="text" maxlength="10">
+      </div>
+      <div>
+        <label id="renamed" class="buttonlabel">Rename</label>
+      </div>
+      <div>
+        <label id="okbutton" class="buttonlabel">Close</label>
+      </div>
+
+    </li>
+
+  </ul>
+  <script></script>
+  <script src="https://cdn.rawgit.com/CryptoStore/crypto-js/3.1.2/build/rollups/aes.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="/scripts/secure-random.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <script src="/scripts/main.js"></script>
+
+
+
+</body>
+
+</html>

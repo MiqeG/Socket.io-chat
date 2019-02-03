@@ -1,0 +1,533 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: 'pixel_miners';
+  src: url('/fonts/pixel-miners-webfont.woff2') format('woff2'),
+       url('/fonts/pixel-miners-webfont.woff') format('woff');
+  font-weight: 50%;
+  font-style: normal;
+
+}
+html, input,body {
+  font-family: "pixel_miners";
+   
+}
+.UserPara{
+  text-align: left;
+
+}
+.wholabel{
+  width:100%;
+  font-weight: 200%;
+  background-color:greenyellow;
+  color: #000;
+  font-weight: 800;
+  text-align: center;
+  font-family: "pixel_miners";
+}
+.buttonlabel{
+  
+    width:100%;
+    font-weight: 200%;
+    color: rgb(213, 76, 218);
+    text-align: center;
+  
+}
+#userlabel{
+  width:100%;
+  font-weight: 200%;
+  text-align: center;
+  opacity: 1;
+}
+#privateuserlabel{
+  width:100%;
+  font-weight: 200%;
+  text-align: center;
+  opacity: 1;
+}
+#iplabel{
+  width:100%;
+  font-weight: 200%;
+  text-align: center;
+  opacity: 1; 
+  color:greenyellow;
+}
+
+  .inputdiv{
+    width:90%;
+    padding-left:10%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ABFE39;
+  font-family: "pixel_miners";
+
+  opacity: 0.5; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: greenyellow;
+  
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: greenyellow;
+  
+}
+.overridedinput{
+  background:#000;
+  border: solid 1px #ABFE39;
+ 
+  width :80%;
+  
+  background-color : rgba(7, 255, 7, 0.03);
+}
+  .inputs{
+    background:#000;
+    border: solid 1px #ABFE39;
+   
+    width :80%;
+    
+    background-color : rgba(7, 255, 7, 0.03);
+  color: greenyellow;
+  }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#emoticondiv{
+  width: 98%;
+  margin-left:2%;
+  height:85%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.emoticondiv2{
+  width:fit-content;
+  height: fit-content;
+  float : right;
+  font-size: 150%;
+  text-align: center;
+  float: left;
+}
+#closediv{
+  width:10%;
+  float:left;
+  text-align: center;
+  padding-right :5px;
+}
+#titlediv{
+  width:90%;
+  float:left;
+  text-align: center;
+}
+.admin.window{
+  opacity: 0.7;
+  width: 15%;
+ height:content;
+  min-width: 100px;
+  background:#000;
+  border: solid 1.2px #ABFE39;
+  position: fixed;
+  top: 35%;
+  left: 40%;
+  z-index: -12;
+  font-family: "pixel_miners";
+}
+#emoticonlabelexpander{
+ width:fit-content;
+ 
+  font-size: 200%;
+ 
+  text-align: center;
+  margin-left: 3%;
+  
+}
+.emoticon.window{
+  opacity: 0.7;
+  width: 30%;
+  height:30%;
+  min-width: 100px;
+  background:#000;
+  border: solid 1.2px #ABFE39;
+  position: fixed;
+  top: 55%;
+  left: 63%;
+  z-index: -12;
+  
+}
+.privatemessage.window{
+  opacity: 0.7;
+  width: 15%;
+  height:content;
+  min-width: 100px;
+  background:#000;
+  border: solid 1.2px #ABFE39;
+  position: fixed;
+  top: 35%;
+  left: 20%;
+  z-index: -12;
+  font-family: "pixel_miners";
+}
+.adminbuttondiv{
+   width:100%;
+  
+   
+}
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.window {
+ 
+  position: absolute;
+  
+}
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+  font-family: "pixel_miners";
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+#renamedtext{
+  width: 100%;
+  margin-bottom:2%;
+  text-align: center;
+}
+#privatemessagetext{
+  width: 80%;
+  margin-left:10%;
+  margin-bottom:2%;
+  text-align: center;
+}
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+.login.page .form .userkey {
+  background-color: transparent;
+  border: none;
+  
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+.login.page .form .userpass {
+  background-color: transparent;
+  border: none;
+ 
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 200%;
+  color: greenyellow;
+ 
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+.login.page .userkey {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+.login.page .userpass {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+.theform{
+  height:100%;
+  width:100%;
+}
+
+.login.page .title, .login.page .usernameInput, .login.page .userkey, .login.page .userpass {
+  color: greenyellow;
+  font-weight: 100;
+}
+
+/* Chat page */
+
+.chat.page {
+  display: none;
+  overflow: hidden;
+}
+.adminbutton{
+  
+  width:100%;
+  font-weight: 200%;
+  text-align: center;
+  opacity: 1;
+  color:greenyellow;
+  background: #000;
+}
+/* Font */
+
+.messages {
+  font-size: 150%;
+ overflow: auto;
+}
+
+.inputMessage {
+  font-size: 80%;
+border:0px;
+margin:0px;
+padding:0px;
+  background-color: #000;
+  color: greenyellow;
+  font-family: "pixel_miners";
+  background-color : rgba(7, 255, 7, 0.03);
+}
+body{
+  background-image: url('/img/pirateflag2.png');
+  background-color: #000;
+  background-position: center; 
+  background-size:cover;
+
+}
+.menutop{
+  color: #D54CDA;
+  font-size: 110%;
+  text-align: center;
+  padding-top: 5px;
+}
+.log {
+  color: greenyellow;
+  font-size: 70%;
+  margin: 5px;
+  text-align: center;
+}
+#apache{
+  width:100%;
+  float: left;
+  overflow-y: scroll;
+  
+  margin-left:15px;
+  
+}
+.rightsidebuttons{
+  width: 100%;
+ height:100%;
+  float:left;
+  overflow: hidden;
+ 
+ 
+}
+#apache2{
+  overflow: hidden;
+}
+/* Messages */
+#choosefilebutton{
+  border: 1px solid rgb(213, 76, 218);
+   color: rgb(213, 76, 218);
+   font-family: "pixel_miners";
+}
+
+.chatArea {
+  height: 100%;
+  padding-bottom: 60px;
+  width:60%;
+  float: left;
+  overflow: hidden;
+  background-color : rgba(7, 255, 7, 0.03);
+  border: 1px rgba(7, 255, 7, 0.3);
+  font-family: "pixel_miners";
+
+}
+#transfer{
+  font-family: "pixel_miners";
+  width: 40%;
+  height:100%;
+  max-height:100%;
+  overflow: hidden;
+  float: right;
+  background-color : rgba(7, 255, 7, 0.03);
+  border: 1px solid rgba(7, 255, 7, 0.00);
+ overflow: hidden;
+}
+#connectedusers{
+ 
+width:20%;
+  height:80%;
+  max-height:80%;
+  overflow: hidden;
+  overflow: auto;
+  float:left;
+ text-align:left;
+  
+}
+
+#scrollablediv{
+ 
+  width: 80%;
+  height :80%;
+  max-height:80%;
+  overflow: auto;
+ padding:0%;
+}
+#scrollablediv2{
+ 
+  width:100%;
+  height :80%;
+  max-height:80%;
+  overflow: hidden;
+ padding:0%;
+}
+#nonscrollablediv{
+  
+  width: 90%;
+ overflow: hidden;
+ 
+ 
+}
+a:link {  color: greenyellow; text-decoration: none; }
+a:visited {  color: greenyellow; text-decoration: none; }
+a:hover {  color: greenyellow; text-decoration: none;border: 1px solid #ABFE39;}
+a:active {  color: greenyellow; text-decoration: none; }
+button:hover {background-color:greenyellow; color: #000; text-decoration: none;border: 1px solid #ABFE39;font-weight: 150%;cursor: pointer;}
+
+.dynTablerowsuser{
+ width:100%;
+}
+.emoticonlabel.page{
+  left: 60%;
+}
+#closediv:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px; color:#000;cursor: pointer;}
+#closediv:hover{background-color:#000;color:#ABFE39;cursor: pointer;}
+.dEmoticon:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px; color:#000;cursor: pointer;}
+.dEmoticon:hover{background-color:#ABFE39;color:#000;cursor: pointer;}
+.emoticonlabel:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px; color:#000;cursor: pointer;}
+.emoticonlabel:hover{background-color:#ABFE39;color:#000;cursor: pointer;}
+.dynamica:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px;}
+.dynamica:hover{background-color:#ABFE39;color:#000;}
+.nickname:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px; color:#000;cursor: pointer;}
+.nickname:hover{padding:2%;cursor: pointer;}
+#iplabel:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px; color:#000;cursor: pointer;}
+#iplabel:hover{color:#D54CDA;cursor: pointer;}
+.buttonlabel:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px; color:#000;cursor: pointer;}
+.buttonlabel:hover{color:#ABFE39;cursor: pointer;}
+#userlabel:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px; color:#000;cursor: pointer;}
+#userlabel:hover{color:#ABFE39;cursor: pointer;}
+.adminbutton:focus{
+  
+  outline:1px dotted #000;
+}
+.adminbutton:active{
+
+  outline:1px dotted #000;
+  
+}
+.nickname{
+  text-align: left;
+  width:100%;
+  
+}
+.dynamica{
+  color: greenyellow;
+  padding:1%;
+
+}
+
+.messages { 
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  padding: 10px 20px 10px 20px;
+  color:greenyellow;
+
+}
+
+.message.typing .messageBody {
+  color: rgb(108, 206, 105);
+}
+#usertable{
+  width:80%;
+}
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+#buttoniframe{
+  width:100%;
+}
+/* Input */
+
+.inputMessage {
+  border: 1px solid green;
+  margin : 1pt;
+ 
+  bottom: 0;
+  height: 5%;
+  left: 0;
+  outline: none;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 1%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: greenyellow; 
+}

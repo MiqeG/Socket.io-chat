@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'pixel_miners';
+    src: url('../fonts/pixel-miners-webfont.woff2') format('woff2'),
+         url('../fonts/pixel-miners-webfont.woff') format('woff');
+    font-weight: 50%;
+    font-style: normal;
+  
+  }
+  html, input,body {
+    font-family: "pixel_miners";
+     
+  }
+.filebutton:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px;font-weight: 150%;}
+.filebutton:hover{background-color:rgba(0,0,0,0)000;color:#ABFE39;}
+.uploadbutton:focus{outline:1px dotted #000;outline: -webkit-focus-ring-color auto 5px;}
+.uploadbutton:hover{background-color:rgba(0,0,0,0);color:#ABFE39;}
+.filebutton{text-align:center;color:#D54CDA;cursor: pointer;display: inline-block; font-weight: 150%;}
+.uploadbutton{border: 1px solid #000;text-align:center;color:#D54CDA;background-color: #000;cursor: pointer;display: inline-block;}
+.inputfile{width:0.1px;height:0.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1;color:#D54CDA;}
+.inputfile + label{cursor: pointer;color:#D54CDA;}
+.inputfile.sepadiv{width:100%;}
+#divupdbtn{
+    
+  
+padding:5px;
+
+}
+#divfilebtn{
+   width :100%;
+   padding:5px;
+   padding-left:10px;
+  
+}
+.button{
+    color:#D54CDA;
+    float: left;
+}
+#file{
+    color:#D54CDA;
+}
+input[type=submit] {
+    font-family: "pixel_miners";
+    width: 8em;  height: 2.2em;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px solid rgba(0,0,0,0.0);
+    font-size: 11pt;
+    float: left;
+    color:#D54CDA;
+}  
+
