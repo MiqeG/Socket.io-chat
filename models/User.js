@@ -1,8 +1,9 @@
 let connection = require('../config/dbConnection')
+const configFile = require('../config/server_config.json');
 class User {
 
     static create(username, password, cb) {
-        connection.query('SELECT count(username) AS count FROM usertable WHERE username = ?', [username], (err, result) => {
+        connection.query('SELECT count('+configFile.mysql.userNameField+') AS count FROM '+configFile.mysql.userTableName+' WHERE '+configFile.mysql.userNameField+' = ?', [username], (err, result) => {
             if (err) throw err;
            
             if (result[0].count != 0) {
@@ -10,8 +11,8 @@ class User {
 
             }
             else {
-                cb(result);
-                connection.query('INSERT INTO usertable SET username = ?, password = ?', [username, password], (err, result) => {
+              
+                connection.query('INSERT INTO '+configFile.mysql.userTableName+' SET '+configFile.mysql.userNameField+' = ?, '+configFile.mysql.passwordField +' = ?', [username, password], (err, result) => {
                     if (err) throw err;
 
                     cb('Done');
@@ -23,7 +24,7 @@ class User {
 
     }
     static search(username, cb) {
-        connection.query('SELECT username,password FROM usertable WHERE username = ?', [username], (err, result) => {
+        connection.query('SELECT '+configFile.mysql.userNameField+','+configFile.mysql.passwordField+' FROM '+configFile.mysql.userTableName+' WHERE '+configFile.mysql.userNameField+' = ?', [username], (err, result) => {
             if (err) throw err;
             if (result[0] != undefined) {
                 cb(result);
